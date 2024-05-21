@@ -1,3 +1,7 @@
+#!/usr/bin/env -S pwsh -noprofile
+
+
+
 function Show-WinGet {
 
     <#
@@ -69,10 +73,12 @@ TODO: Add more functionality
 }
 
 function Show-WingetSimple {
-    <#.DESCRIPTION
+    <#.SYNOPSIS
     Simple implementation of this function.
     #>
     foreach ($i in $args) {winget show $i}
 }
 
-Export-ModuleMember -Function 'Show-Winget'
+
+
+Export-ModuleMember -Function @('Show-Winget', 'Show-WingetSimple')
