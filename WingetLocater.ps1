@@ -1,4 +1,18 @@
-
+function Find-Winget {
+    <#
+    .SYNOPSIS
+    Find the winget binary
+    .DESCRIPTION
+    Finds the winget binary if it is in path.
+    #>
+    [Cmdletbinding()]
+    param(
+    )
+    if (!(Get-command winget -ea Ignore)) {
+        throw "winget not found"
+    }
+    return (get-command winget)
+}
 <#
 .SYNOPSIS
 A simple version of show winget

@@ -79,6 +79,9 @@ function Show-WingetSimple {
     foreach ($i in $args) {winget show $i}
 }
 
+New-Alias -Name wgshow -Value Show-Winget -Description "Show winget package info, pkg names separated by spaces" -Option AllScope
+new-alias wgshowsimple Show-WingetSimple -Description "Show winget pkg info"  
 
 
-Export-ModuleMember -Function @('Show-Winget', 'Show-WingetSimple')
+Export-ModuleMember -Function @('Show-Winget', 'Show-WingetSimple') -Alias @("wgshow", "wgshowsimple")
+
