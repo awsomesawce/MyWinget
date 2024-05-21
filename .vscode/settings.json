@@ -1,0 +1,11 @@
+{
+    "powershell.analyzeOpenDocumentsOnly": true,
+    "powershell.buttons.showPanelMovementButtons": true,
+    "powershell.codeFormatting.autoCorrectAliases": true,
+    "powershell.codeFormatting.pipelineIndentationStyle": "IncreaseIndentationForFirstPipeline",
+    "powershell.codeFormatting.trimWhitespaceAroundPipe": true,
+    "powershell.developer.bundledModulesPath": "",
+    "powershell.integratedConsole.startLocation": "Editor",
+    "powershell.scriptAnalysis.enable": false,
+    "powershell.sideBar.CommandExplorerVisibility": true
+}
